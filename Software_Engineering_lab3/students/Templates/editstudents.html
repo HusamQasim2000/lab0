@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>if</h3>
+    {% if total > 250 %}
+    <p>Ex</p>
+    {% endif %}
+    <h3>if and else</h3>
+    {% if total > 250 %}
+    <p>Ex</p>
+    {% else %}
+    <p>good</p>
+    {% endif %}
+    <h3>if, elif and else</h3>
+    {% if total > 250 %}
+    <p>Ex</p>
+    {% elif total < 250 and total > 200 %}
+    <p>very good</p>
+    {% else %}
+    <p>good</p>
+    {% endif %}
+    <h3>for loop</h3>
+    <ul>
+        {% for sub,mark in marks.items %}
+        <li>{{sub}} : {{mark}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
